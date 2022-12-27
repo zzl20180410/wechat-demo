@@ -31,6 +31,10 @@ public class CounterController {
     this.logger = LoggerFactory.getLogger(CounterController.class);
   }
 
+  @GetMapping(value = "/api/test")
+  ApiResponse test() {
+    return ApiResponse.ok("中国nice");
+  }
 
   /**
    * 获取当前计数
